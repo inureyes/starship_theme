@@ -1,0 +1,398 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# ─────────────────────────────────────────────────────────────
+# Prompt layout
+# ─────────────────────────────────────────────────────────────
+
+format = """
+$os\
+$hostname\
+[](bg:color_bg_user fg:color_bg_hostname)\
+$username\
+[](bg:color_bg_directory fg:color_bg_user)\
+$directory\
+[](fg:color_bg_directory bg:color_bg_git)\
+$git_branch\
+$git_status\
+[](fg:color_bg_git bg:color_bg_language)\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:color_bg_language bg:color_bg_environment)\
+$docker_context\
+$conda\
+$pixi\
+[](fg:color_bg_environment bg:color_bg_time)\
+$time\
+[ ](fg:color_bg_time)\
+$line_break$character"""
+
+# ─────────────────────────────────────────────────────────────
+# Palette
+# ─────────────────────────────────────────────────────────────
+
+palette = 'mac'
+
+[palettes.nvidia]
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#d0d0d0'
+color_fg_hostname           = '#1a1a1a'
+
+# Segment: User
+color_bg_user               = '#76b900'
+color_fg_user               = '#0d1a00'
+
+# Segment: Directory
+color_bg_directory          = '#5a8f00'
+color_fg_directory          = '#f0ffe0'
+
+# Segment: Git
+color_bg_git                = '#3f6b00'
+color_fg_git                = '#f0ffe0'
+
+# Segment: Language runtimes
+color_bg_language           = '#264d00'
+color_fg_language           = '#c8f090'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#1a2a0d'
+color_fg_environment        = '#c8f090'
+color_fg_environment_accent = '#76b900'
+
+# Segment: Time
+color_bg_time               = '#0d1505'
+color_fg_time               = '#c8f090'
+
+# Prompt character states
+color_fg_success            = '#76b900'
+color_fg_error              = '#e01e1e'
+color_fg_vim_normal         = '#76b900'
+color_fg_vim_replace        = '#a560b0'
+color_fg_vim_visual         = '#d4a017'
+
+[palettes.amd]
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#d0d0d0'
+color_fg_hostname           = '#1a1a1a'
+
+# Segment: User
+color_bg_user               = '#ed1c24'
+color_fg_user               = '#1a0000'
+
+# Segment: Directory
+color_bg_directory          = '#b8141a'
+color_fg_directory          = '#ffe8e8'
+
+# Segment: Git
+color_bg_git                = '#8a0f14'
+color_fg_git                = '#ffe8e8'
+
+# Segment: Language runtimes
+color_bg_language           = '#5c0a0d'
+color_fg_language           = '#ffc8c8'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#2d0507'
+color_fg_environment        = '#ffc8c8'
+color_fg_environment_accent = '#ed1c24'
+
+# Segment: Time
+color_bg_time               = '#150203'
+color_fg_time               = '#ffc8c8'
+
+# Prompt character states
+color_fg_success            = '#76b900'
+color_fg_error              = '#ed1c24'
+color_fg_vim_normal         = '#76b900'
+color_fg_vim_replace        = '#c060a0'
+color_fg_vim_visual         = '#e0a020'
+
+[palettes.lablup]
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#d0d0d0'
+color_fg_hostname           = '#1a1a1a'
+
+# Segment: User
+color_bg_user               = '#43b02a'
+color_fg_user               = '#052010'
+
+# Segment: Directory
+color_bg_directory          = '#348a20'
+color_fg_directory          = '#eaffe0'
+
+# Segment: Git
+color_bg_git                = '#256617'
+color_fg_git                = '#eaffe0'
+
+# Segment: Language runtimes
+color_bg_language           = '#17430f'
+color_fg_language           = '#b8e6a0'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#0d2608'
+color_fg_environment        = '#b8e6a0'
+color_fg_environment_accent = '#43b02a'
+
+# Segment: Time
+color_bg_time               = '#061404'
+color_fg_time               = '#b8e6a0'
+
+# Prompt character states
+color_fg_success            = '#43b02a'
+color_fg_error              = '#d63b2f'
+color_fg_vim_normal         = '#43b02a'
+color_fg_vim_replace        = '#a560b0'
+color_fg_vim_visual         = '#d4a017'
+
+[palettes.mac]
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#e5e5ea'
+color_fg_hostname           = '#1d1d1f'
+
+# Segment: User
+color_bg_user               = '#aeaeb2'
+color_fg_user               = '#1d1d1f'
+
+# Segment: Directory
+color_bg_directory          = '#8e8e93'
+color_fg_directory          = '#f5f5f7'
+
+# Segment: Git
+color_bg_git                = '#636366'
+color_fg_git                = '#f5f5f7'
+
+# Segment: Language runtimes
+color_bg_language           = '#48484a'
+color_fg_language           = '#f5f5f7'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#3a3a3c'
+color_fg_environment        = '#f5f5f7'
+color_fg_environment_accent = '#0a84ff'
+
+# Segment: Time
+color_bg_time               = '#1c1c1e'
+color_fg_time               = '#f5f5f7'
+
+# Prompt character states
+color_fg_success            = '#30d158'
+color_fg_error              = '#ff453a'
+color_fg_vim_normal         = '#0a84ff'
+color_fg_vim_replace        = '#bf5af2'
+color_fg_vim_visual         = '#ffd60a'
+
+[palettes.windows]
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#f3f3f3'
+color_fg_hostname           = '#1b1b1b'
+
+# Segment: User
+color_bg_user               = '#0078d4'
+color_fg_user               = '#ffffff'
+
+# Segment: Directory
+color_bg_directory          = '#005fb8'
+color_fg_directory          = '#ffffff'
+
+# Segment: Git
+color_bg_git                = '#004a93'
+color_fg_git                = '#ffffff'
+
+# Segment: Language runtimes
+color_bg_language           = '#003a75'
+color_fg_language           = '#cfe4fa'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#1f1f1f'
+color_fg_environment        = '#cfe4fa'
+color_fg_environment_accent = '#60cdff'
+
+# Segment: Time
+color_bg_time               = '#0f0f0f'
+color_fg_time               = '#cfe4fa'
+
+# Prompt character states
+color_fg_success            = '#6ccb5f'
+color_fg_error              = '#e81123'
+color_fg_vim_normal         = '#60cdff'
+color_fg_vim_replace        = '#b4009e'
+color_fg_vim_visual         = '#ffb900'
+
+
+# ─────────────────────────────────────────────────────────────
+# Host segment (OS icon + hostname)
+# ─────────────────────────────────────────────────────────────
+
+[os]
+disabled = false
+style = "bg:color_bg_hostname fg:color_fg_hostname"
+format = '[ $symbol]($style)'
+
+[os.symbols]
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
+Arch             = "󰣇"
+Artix            = "󰣇"
+CentOS = ""
+Debian           = "󰣚"
+EndeavourOS = ""
+Fedora           = "󰣛"
+Gentoo           = "󰣨"
+Linux            = "󰌽"
+Macos            = "󰀵"
+Manjaro = ""
+Mint             = "󰣭"
+Pop = ""
+Raspbian         = "󰐿"
+Redhat           = "󱄛"
+RedHatEnterprise = "󱄛"
+SUSE = ""
+Ubuntu           = "󰕈"
+Windows          = "󰍲"
+
+[hostname]
+disabled = false
+ssh_only = false
+style = "bg:color_bg_hostname fg:color_fg_hostname"
+format = '[ $hostname ]($style)'
+
+# ─────────────────────────────────────────────────────────────
+# User + directory
+# ─────────────────────────────────────────────────────────────
+
+[username]
+show_always = true
+style_user = "bg:color_bg_user fg:color_fg_user"
+style_root = "bg:color_bg_user fg:color_fg_user"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_fg_directory bg:color_bg_directory"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music"     = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+# ─────────────────────────────────────────────────────────────
+# Git
+# ─────────────────────────────────────────────────────────────
+
+[git_branch]
+symbol = ""
+style = "bg:color_bg_git"
+format = '[[ $symbol $branch ](fg:color_fg_git bg:color_bg_git)]($style)'
+
+[git_status]
+style = "bg:color_bg_git"
+format = '[[($all_status$ahead_behind )](fg:color_fg_git bg:color_bg_git)]($style)'
+
+# ─────────────────────────────────────────────────────────────
+# Language runtimes (shared blue segment)
+#
+# All language modules share the same style/format — only the
+# symbol differs. If you tweak one, consider tweaking the rest.
+# ─────────────────────────────────────────────────────────────
+
+[c]
+symbol = " "
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[cpp]
+symbol = " "
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[java]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_bg_language"
+format = '[[ $symbol( $version) ](fg:color_fg_language bg:color_bg_language)]($style)'
+
+# ─────────────────────────────────────────────────────────────
+# Container / environment tools
+# ─────────────────────────────────────────────────────────────
+
+[docker_context]
+symbol = ""
+style = "bg:color_bg_environment"
+format = '[[ $symbol( $context) ](fg:color_fg_environment_accent bg:color_bg_environment)]($style)'
+
+[conda]
+style = "bg:color_bg_environment"
+format = '[[ $symbol( $environment) ](fg:color_fg_environment_accent bg:color_bg_environment)]($style)'
+
+[pixi]
+style = "bg:color_bg_environment"
+format = '[[ $symbol( $version)( $environment) ](fg:color_fg_environment bg:color_bg_environment)]($style)'
+
+# ─────────────────────────────────────────────────────────────
+# Time + prompt character
+# ─────────────────────────────────────────────────────────────
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_bg_time"
+format = '[[  $time ](fg:color_fg_time bg:color_bg_time)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol            = '[](bold fg:color_fg_success)'
+error_symbol              = '[](bold fg:color_fg_error)'
+vimcmd_symbol             = '[](bold fg:color_fg_vim_normal)'
+vimcmd_replace_one_symbol = '[](bold fg:color_fg_vim_replace)'
+vimcmd_replace_symbol     = '[](bold fg:color_fg_vim_replace)'
+vimcmd_visual_symbol      = '[](bold fg:color_fg_vim_visual)'
