@@ -1,6 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # ─────────────────────────────────────────────────────────────
+# Active palette
+#
+# Change this one line to switch themes. Available palettes:
+#   mac, windows, nvidia, amd, intel, lablup, backend_ai, aigo
+# ─────────────────────────────────────────────────────────────
+
+palette = 'mac'
+
+# ─────────────────────────────────────────────────────────────
 # Prompt layout
 # ─────────────────────────────────────────────────────────────
 
@@ -35,10 +44,8 @@ $time\
 $line_break$character"""
 
 # ─────────────────────────────────────────────────────────────
-# Palette
+# Palettes
 # ─────────────────────────────────────────────────────────────
-
-palette = 'mac'
 
 [palettes.nvidia]
 # Segment: Host (OS icon + hostname)
@@ -84,7 +91,7 @@ color_fg_hostname           = '#1a1a1a'
 
 # Segment: User
 color_bg_user               = '#ed1c24'
-color_fg_user               = '#1a0000'
+color_fg_user               = '#ffffff'
 
 # Segment: Directory
 color_bg_directory          = '#b8141a'
@@ -224,6 +231,120 @@ color_fg_error              = '#e81123'
 color_fg_vim_normal         = '#60cdff'
 color_fg_vim_replace        = '#b4009e'
 color_fg_vim_visual         = '#ffb900'
+
+[palettes.backend_ai]
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#fff4e0'
+color_fg_hostname           = '#3a1f00'
+
+# Segment: User
+color_bg_user               = '#ff9d00'
+color_fg_user               = '#2a1500'
+
+# Segment: Directory
+color_bg_directory          = '#dc6b03'
+color_fg_directory          = '#fff4e0'
+
+# Segment: Git
+color_bg_git                = '#a64e00'
+color_fg_git                = '#fff4e0'
+
+# Segment: Language runtimes
+color_bg_language           = '#6e3300'
+color_fg_language           = '#ffd8a0'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#3a1f00'
+color_fg_environment        = '#ffd8a0'
+color_fg_environment_accent = '#ff9d00'
+
+# Segment: Time
+color_bg_time               = '#1a0e00'
+color_fg_time               = '#ffd8a0'
+
+# Prompt character states
+color_fg_success            = '#28c840'
+color_fg_error              = '#e01e4a'
+color_fg_vim_normal         = '#ff9d00'
+color_fg_vim_replace        = '#a560b0'
+color_fg_vim_visual         = '#fbbf24'
+
+[palettes.aigo]
+# Backend.AI Go header gradient: blue -> purple -> pink -> peach.
+# Each segment picks a point along the gradient, left to right.
+
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#7fa6d4'
+color_fg_hostname           = '#ffffff'
+
+# Segment: User
+color_bg_user               = '#8f85d0'
+color_fg_user               = '#ffffff'
+
+# Segment: Directory
+color_bg_directory          = '#a87bc6'
+color_fg_directory          = '#ffffff'
+
+# Segment: Git
+color_bg_git                = '#c27bb4'
+color_fg_git                = '#ffffff'
+
+# Segment: Language runtimes
+color_bg_language           = '#da7fa0'
+color_fg_language           = '#ffffff'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#ec8a85'
+color_fg_environment        = '#ffffff'
+color_fg_environment_accent = '#ffd8b0'
+
+# Segment: Time
+color_bg_time               = '#f2a06e'
+color_fg_time               = '#ffffff'
+
+# Prompt character states
+color_fg_success            = '#7fa6d4'
+color_fg_error              = '#ec6c5f'
+color_fg_vim_normal         = '#a87bc6'
+color_fg_vim_replace        = '#da7fa0'
+color_fg_vim_visual         = '#f2a06e'
+
+[palettes.intel]
+# Segment: Host (OS icon + hostname)
+color_bg_hostname           = '#e5f1fa'
+color_fg_hostname           = '#001a33'
+
+# Segment: User
+color_bg_user               = '#0068b5'
+color_fg_user               = '#ffffff'
+
+# Segment: Directory
+color_bg_directory          = '#00548f'
+color_fg_directory          = '#e5f1fa'
+
+# Segment: Git
+color_bg_git                = '#00406b'
+color_fg_git                = '#e5f1fa'
+
+# Segment: Language runtimes
+color_bg_language           = '#002c4a'
+color_fg_language           = '#a8c8e8'
+
+# Segment: Environment tools (docker/conda/pixi)
+color_bg_environment        = '#001a2e'
+color_fg_environment        = '#a8c8e8'
+color_fg_environment_accent = '#00c7fd'
+
+# Segment: Time
+color_bg_time               = '#000d17'
+color_fg_time               = '#a8c8e8'
+
+# Prompt character states
+color_fg_success            = '#8bae10'
+color_fg_error              = '#ed1c24'
+color_fg_vim_normal         = '#00c7fd'
+color_fg_vim_replace        = '#8f5da2'
+color_fg_vim_visual         = '#f7a000'
 
 
 # ─────────────────────────────────────────────────────────────

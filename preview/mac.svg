@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="529" height="46" viewBox="0 0 529 46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">
+<rect x="0" y="0" width="529" height="46" rx="6" ry="6" fill="#0d0d0d"/>
+<rect x="16" y="12" width="70" height="22" fill="#e5e5ea"/>
+<text x="51.0" y="27.0" fill="#1d1d1f" text-anchor="middle">hostname</text>
+<rect x="86" y="12" width="13" height="22" fill="#aeaeb2"/>
+<polygon points="86,12 99,23.0 86,34" fill="#e5e5ea"/>
+<rect x="99" y="12" width="54" height="22" fill="#aeaeb2"/>
+<text x="126.0" y="27.0" fill="#1d1d1f" text-anchor="middle">user</text>
+<rect x="153" y="12" width="13" height="22" fill="#8e8e93"/>
+<polygon points="153,12 166,23.0 153,34" fill="#aeaeb2"/>
+<rect x="166" y="12" width="54" height="22" fill="#8e8e93"/>
+<text x="193.0" y="27.0" fill="#f5f5f7" text-anchor="middle">~/dev</text>
+<rect x="220" y="12" width="13" height="22" fill="#636366"/>
+<polygon points="220,12 233,23.0 220,34" fill="#8e8e93"/>
+<rect x="233" y="12" width="54" height="22" fill="#636366"/>
+<text x="260.0" y="27.0" fill="#f5f5f7" text-anchor="middle">main</text>
+<rect x="287" y="12" width="13" height="22" fill="#48484a"/>
+<polygon points="287,12 300,23.0 287,34" fill="#636366"/>
+<rect x="300" y="12" width="63" height="22" fill="#48484a"/>
+<text x="331.5" y="27.0" fill="#f5f5f7" text-anchor="middle">py 3.12</text>
+<rect x="363" y="12" width="13" height="22" fill="#3a3a3c"/>
+<polygon points="363,12 376,23.0 363,34" fill="#48484a"/>
+<rect x="376" y="12" width="56" height="22" fill="#3a3a3c"/>
+<text x="404.0" y="27.0" fill="#f5f5f7" text-anchor="middle">docker</text>
+<rect x="432" y="12" width="13" height="22" fill="#1c1c1e"/>
+<polygon points="432,12 445,23.0 432,34" fill="#3a3a3c"/>
+<rect x="445" y="12" width="54" height="22" fill="#1c1c1e"/>
+<text x="472.0" y="27.0" fill="#f5f5f7" text-anchor="middle">14:30</text>
+<polygon points="499,12 512,23.0 499,34" fill="#1c1c1e"/>
+</svg>
